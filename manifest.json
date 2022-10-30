@@ -17,8 +17,7 @@
         {
             "js":["scripts/content.js"],
             "matches":[
-                "https://www.youtube.com/*",
-                "https://developer.chrome.com/docs/*"
+                "https://www.youtube.com/*"
             ]
         }
     ], 

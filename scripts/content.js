@@ -25,6 +25,7 @@ let intervalId = null;
 // only run if the extension is ON
 if (state === "ON") {
   //  hide the thumbnails on page load and when new videos are loaded
+
   window.onload = hideThumbnails;
   intervalId = setInterval(hideThumbnails, 1000);
 }
