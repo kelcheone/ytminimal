@@ -1,0 +1,29 @@
+{
+    "name": "YouTube Minimal",
+    "description": "A minimal YouTube interface.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons":{
+        "128": "images/y.png"
+    },
+    "background":{
+        "service_worker":"background.js"
+    },
+    "action":{
+        
+        "default_icon": "./images/y.png"
+    },
+    "content_scripts":[
+        {
+            "js":["scripts/content.js"],
+            "matches":[
+                "https://www.youtube.com/*",
+                "https://developer.chrome.com/docs/*"
+            ]
+        }
+    ], 
+    "permissions":[
+        "storage",
+        "activeTab"
+    ]
+}
