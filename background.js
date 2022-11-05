@@ -1,8 +1,8 @@
 chrome.runtime.onInstalled.addListener(() => {
-  chrome.action.setBadgeText({ text: "ON" });
+  chrome.action.setBadgeText({ text: "OFF" });
   //   set the default state to ON
-  chrome.storage.sync.set({ state: "ON" }, () => {
-    console.log("State is set to ON");
+  chrome.storage.sync.set({ state: "OFF" }, () => {
+    console.log("State is set to OFF");
   });
 });
 

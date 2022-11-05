@@ -1,4 +1,4 @@
-let state = "ON";
+let state = "OFF";
 // get state from storage
 chrome.storage.sync.get(["state"], (result) => {
   // check if state is set
